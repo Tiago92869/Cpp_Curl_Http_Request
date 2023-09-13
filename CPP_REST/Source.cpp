@@ -25,7 +25,7 @@ PCWSTR getPassword() {
 
 	curl = curl_easy_init();
 	if (curl) {
-		curl_easy_setopt(curl, CURLOPT_URL, "http://localhost:5000/api/credentials/15286356");
+		curl_easy_setopt(curl, CURLOPT_URL, "http://localhost:5000/api/yourURL");
 		curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
 		curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
 
